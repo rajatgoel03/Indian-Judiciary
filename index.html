@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Compensation for MACT Cases</title>
+        <link rel="stylesheet" href="style.css"/>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <img src="/img/supremecourt.jpg"/>
+        <div class="bg"></div>
+        <div>
+            <br/><br/>
+            <h1>Compensation for MACT Cases</h1>
+            <form>
+                
+                <div class="formElement">
+                    <div>
+                        <label>Income of Deceased:</label><br/>
+                        <input id="A" type="number"/>
+                    </div><br/>
+                    <div>
+                        <label>Add-Future Prospects:</label><br/>
+                        <input id="B" type="number"/></div>
+                    <div>
+                        <label>Less-Personal expenses of the deceased:</label><br/>
+                        <input id="C" type="number"/>
+                    </div>
+                    <div>
+                        <label>Multiplier:</label><br/>
+                        <input id="E" type="number"/></div>
+                    <div>
+                        <label>Medical Expenses:</label><br/>
+                        <input id="G" type="number"/></div>
+                    <div>
+                        <label>Compensation for loss of consortium:</label><br/>
+                        <input id="H" type="number"/></div>
+                    <div>
+                        <label>Compensation for loss of love and affection:</label><br/>
+                        <input id="I" type="number"/></div>
+                    <div>
+                        <label>Compensation for loss of estate:</label><br/>
+                        <input id="J" type="number"/></div>
+                    <div>
+                        <label>Compensation towards funeral expenses:</label><br/>
+                        <input id="K" type="number"/></div>
+
+               </div>
+                
+               <br/><br/>
+                <button type="button" onclick="compensation()">Calculate</button>
+                <br/><br/><br/>
+                
+                <label>Total Compensation(in Rs.):</label>
+                <div id="answer">
+                </div>
+            </form>     
+        </div>
+    <script src="calculator.js"></script>
+    <script>
+        function handleClick() {
+            let A = document.getElementById('K').value;
+            document.getElementById('answer').innerText = A;
+        }
+    </script>
+    </body>
+</html>
