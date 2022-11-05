@@ -12,7 +12,7 @@ img {
     z-index: -1;
     top: 0;
     left: 0;
-    background: linear-gradient(#2d388a, #00aeef);
+    background: linear-gradient(#2A5470 , #4C4177);
     height: 100%;
     width: 100%;
     opacity: 0.7;
@@ -25,7 +25,7 @@ h3, h1 {
 }
 
 form {
-    width: 60%;
+    width: 40%;
     background: rgba(255, 255, 255, 0.15);
    
     /* grid-template-rows: repeat(auto, auto); */
@@ -40,6 +40,9 @@ input {
     height: 30px;
     font-size: 18px;
     width: 100%;
+    border-radius: 6px;
+    border: none;
+    margin-top: 5px;
 }
 
 label {
@@ -56,7 +59,7 @@ label {
 
 button {
     height: 40px;
-    background: #2d388a;
+    background: rgb(40, 37, 57);
     color: white;
     border: none;
     margin: auto;
@@ -70,7 +73,8 @@ button:hover {
 
 .formElement {
     display: grid;
-    grid-template-columns: repeat(2, 45%);
+    /* grid-template-columns: repeat(2, 45%); */
+    grid-template-rows: repeat(1, auto);
     column-gap: 40px;
     row-gap: 30px;
 }
